@@ -1,0 +1,123 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.33.0.0
+Copyright (C) 2020 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Clown  , Comma_robocup, LIC=76F5U-SCS1U-Z9UG9-4SYQM-NR077-EZXR0
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.33.0.0
+Toolchain Path:  D:\keil\sys_files\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.33.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      UL2CM3.DLL V1.163.9.0
+Dialog DLL:      TCM.DLL V1.48.0.0
+ 
+<h2>Project:</h2>
+C:\Users\Clown\Documents\Comma,\programs\stm32f407\main\main_comma.uvprojx
+Project File Date:  06/14/2022
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'D:\keil\sys_files\ARM\ARMCC\Bin'
+Rebuild target 'core_target'
+assembling startup_stm32f407xx.s...
+compiling system_stm32f4xx.c...
+compiling stm32f4xx_dac.c...
+compiling misc.c...
+compiling main.cpp...
+main.cpp(1): warning:  #1-D: last line of file ends without a newline
+  #include "Project_config.h"
+main.cpp: 1 warning, 0 errors
+compiling stm32f4xx_crc.c...
+compiling retarget.cpp...
+compiling stm32f4xx_adc.c...
+compiling pin_setup.cpp...
+compiling stm32f4xx_spi.c...
+compiling stm32f4xx_gpio.c...
+compiling stm32f4xx_rcc.c...
+compiling stm32f4xx_usart.c...
+compiling stm32f4xx_dma.c...
+compiling USART.cpp...
+compiling stm32f4xx_tim.c...
+compiling time_service.cpp...
+compiling dma.cpp...
+.\src\libs\Adc\adc.h(29): warning:  #1-D: last line of file ends without a newline
+  };
+src\libs\Dma\dma.cpp(41): warning:  #1-D: last line of file ends without a newline
+  }
+src\libs\Dma\dma.cpp: 2 warnings, 0 errors
+compiling adc.cpp...
+src\libs\Adc\adc.h(29): warning:  #1-D: last line of file ends without a newline
+  };
+src\libs\Adc\adc.cpp(73): warning:  #1-D: last line of file ends without a newline
+  }
+src\libs\Adc\adc.cpp: 2 warnings, 0 errors
+compiling IRLocator.cpp...
+src\libs\IRLocator\IRLocator.cpp(49): warning:  #1-D: last line of file ends without a newline
+  }
+src\libs\IRLocator\IRLocator.cpp: 1 warning, 0 errors
+compiling motor.cpp...
+compiling soft_i2c.cpp...
+compiling ball_detecter.cpp...
+compiling motors.cpp...
+src\libs\Motors\motors.h(32): warning:  #1-D: last line of file ends without a newline
+  };
+src\libs\Motors\motors.cpp(94): warning:  #1-D: last line of file ends without a newline
+  // you are clown
+src\libs\Motors\motors.cpp: 2 warnings, 0 errors
+compiling PID.cpp...
+.\src\libs\My_math\my_math.h(21): warning:  #1-D: last line of file ends without a newline
+  };
+src\libs\PID\PID.cpp: 1 warning, 0 errors
+compiling OpenMV.cpp...
+src\libs\OpenMV\OpenMV.cpp(16): warning:  #1299-D: members and base-classes will be initialized in declaration order, not in member initialisation list order
+  camera::camera(pin &tx, pin &rx):m_tx(tx), m_rx(rx)
+src\libs\OpenMV\OpenMV.cpp: 1 warning, 0 errors
+compiling kicker.cpp...
+src\libs\Kicker\kicker.h(21): warning:  #1-D: last line of file ends without a newline
+  };
+src\libs\Kicker\kicker.cpp(51): warning:  #1-D: last line of file ends without a newline
+  }
+src\libs\Kicker\kicker.cpp: 2 warnings, 0 errors
+compiling my_math.cpp...
+src\libs\My_math\my_math.h(21): warning:  #1-D: last line of file ends without a newline
+  };
+src\libs\My_math\my_math.cpp(67): warning:  #1-D: last line of file ends without a newline
+  	
+src\libs\My_math\my_math.cpp: 2 warnings, 0 errors
+compiling line_sensors.cpp...
+.\src\libs\Adc\adc.h(29): warning:  #1-D: last line of file ends without a newline
+  };
+src\libs\Line_sensors\line_sensors.cpp(113): warning:  #940-D: missing return statement at end of non-void function "line::getData" 
+  }
+src\libs\Line_sensors\line_sensors.cpp: 2 warnings, 0 errors
+linking...
+.\Objects\main.axf: Error: L6218E: Undefined symbol main (referred from __rtentry2.o).
+Not enough information to list image symbols.
+Not enough information to list load addresses in the image map.
+Finished: 2 information, 0 warning and 1 error messages.
+".\Objects\main.axf" - 1 Error(s), 16 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F4xx_DFP.2.16.0.pack
+                Keil.STM32F4xx_DFP.2.16.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  D:\keil\pack_folder\Keil\STM32F4xx_DFP\2.16.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+Target not created.
+Build Time Elapsed:  00:00:07
+</pre>
+</body>
+</html>
